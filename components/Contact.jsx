@@ -1,8 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import handImg from "../public/image1.png"
 
 export default function Contact() {
     return (
@@ -15,7 +17,7 @@ export default function Contact() {
                     {/* Left */}
                     <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl">
                         <div className="lg:p-4 h-full rounded-xl">
-                            <img className="rounded-xl hover:scale-105 ease-in duration-300" src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="/" />
+                            <Image className="rounded-xl hover:scale-105 ease-in duration-300" src={handImg} width={600} height={400} alt="/" />
                             <div>
                                 <h2 className="py-2">Samuel Alvian Maryono</h2>
                                 <p>Web Developer</p>

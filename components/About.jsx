@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import codeImg from "../public/image2.png"
 
 export default function About() {
     return (
@@ -13,7 +15,7 @@ export default function About() {
                     </Link>
                 </div>
                 <div className="w-full h-auto m-auto shadow-lg shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300">
-                    <img className="rounded-xl" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="/" />
+                    <Image className="rounded-xl" src={codeImg} width={400} height={400} alt="/" />
                 </div>
             </div>
         </div>
